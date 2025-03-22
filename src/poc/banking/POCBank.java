@@ -101,7 +101,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 class AlertBox{
-	public String title="POC | ICICI PRUDENTIAL LIFE INSURANCE";
+	public String title="POC | <BANK>";
 	public int msgicon=R.drawable.icici;
 	
 }
