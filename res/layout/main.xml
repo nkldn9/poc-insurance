@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01"
+	    android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ViewFlipper android:id="@+id/ViewFlipper01" android:layout_height="wrap_content" android:layout_width="wrap_content">
+            <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tblWelcomeC0">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lblWelcome" android:text="Select Menu" android:layout_marginLeft="110px" android:layout_marginBottom="15px" android:textSize="16px" android:textStyle="bold"/> 
+- <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow1">
+  <ImageView android:layout_marginBottom="20px" android:src="@drawable/icici_logo" android:layout_marginLeft="70px" android:layout_height="wrap_content" android:id="@+id/imgICICI" android:layout_width="wrap_content"/> 
+  </TableRow>
+- <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow2">
+  <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="90px" android:id="@+id/btnNew" android:text="Add Record"/> 
+  </TableRow>
+- 
+  <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow5">
+      <Button android:id="@+id/btnAttach" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginLeft="90px" android:text="Attach Document(s)"></Button>
+  </TableRow>
+  <TableRow android:id="@+id/tableRow29" android:layout_width="wrap_content" android:layout_height="wrap_content">
+      <Button android:layout_height="wrap_content" android:id="@+id/btnSync" android:layout_width="wrap_content" android:text="Synchronize" android:layout_marginLeft="90px"></Button>
+  </TableRow>
+- <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow6">
+  <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Exit" android:id="@+id/btnEx" android:layout_marginLeft="90px" /> 
+  </TableRow>
+                
+            </TableLayout>
+            <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tblPersonalC1">
+                <TextView android:layout_height="wrap_content" android:text="Personal Details																										(Step 1 of 5)" android:layout_width="wrap_content" android:id="@+id/lblPeronal" android:layout_marginBottom="15px" android:textSize="16px" android:textStyle="bold"></TextView>
+                <TableRow android:layout_width="match_parent" android:id="@+id/tableRow11" android:layout_height="wrap_content">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblFname" android:text="* First Name" android:layout_gravity="center|right"></TextView>
+                    <EditText android:id="@+id/txtFname" android:singleLine="true" android:layout_height="wrap_content" android:layout_width="200px" android:inputType="textCapCharacters"></EditText>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow12" android:layout_height="wrap_content">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblLname" android:text="* Last Name" android:layout_gravity="right"></TextView>
+                    <EditText android:id="@+id/txtLname" android:singleLine="true" android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="textCapCharacters"></EditText>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow13" android:layout_height="wrap_content">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblDOB" android:text="* Date of Birth" android:layout_gravity="center"></TextView>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lblPickDate" android:text="Click to pick a date" android:textStyle="bold" android:textSize="25px"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow14" android:layout_height="wrap_content">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblGender" android:text="* Gender" android:layout_gravity="center_vertical|right"></TextView>
+                    <RadioGroup android:layout_height="wrap_content" android:id="@+id/radioGroupGender" android:layout_width="wrap_content">
+                        <RadioButton android:id="@+id/radioMale" android:checked="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Male"></RadioButton>
+                        <RadioButton android:id="@+id/radioFemale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Female"></RadioButton>
+                    </RadioGroup>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow15" android:layout_height="wrap_content">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblMaritalStatus" android:layout_marginRight="20px" android:text="* Marital Status" android:layout_gravity="center_vertical|right"></TextView>
+                    <Spinner android:layout_height="wrap_content" android:id="@+id/spinnerMaritalStatus" android:layout_width="wrap_content"></Spinner>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tblInvestC2">
+                <TextView android:id="@+id/lblInvest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Investment Details																				(Step 2 of 5)" android:layout_marginBottom="15px" android:textSize="16px" android:textStyle="bold"></TextView>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow16" android:layout_height="wrap_content">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblMultiplier" android:text="* Multiplier (%)" android:layout_gravity="center_vertical|right"></TextView>
+                    <Spinner android:layout_height="wrap_content" android:id="@+id/spinnerMultiplier" android:layout_width="wrap_content"></Spinner>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow17" android:layout_height="wrap_content">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblAnnualPremium" android:text="* Annual Premium (Rs)" android:layout_gravity="center"></TextView>
+                    <EditText android:id="@+id/txtAnnualPremium" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="40000" android:inputType="numberDecimal" android:layout_gravity="left"></EditText>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow18" android:layout_height="wrap_content">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Sum Assured (Rs)" android:id="@+id/lblSum" android:layout_gravity="center_vertical|right"></TextView>
+                    <EditText android:id="@+id/txtSum" android:layout_height="wrap_content" android:layout_width="wrap_content" android:enabled="false" android:inputType="number"></EditText>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow19" android:layout_height="wrap_content">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblTOP" android:text="* Term of Policy" android:layout_gravity="center_vertical|right"></TextView>
+                    <Spinner android:layout_height="wrap_content" android:id="@+id/spinnerTOP" android:layout_width="wrap_content"></Spinner>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tblAllocC3">
+                <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblAllocation" android:text="Fund Allocation																									(Step 3 of 5)" android:layout_marginBottom="15px" android:textSize="16px" android:textStyle="bold"></TextView>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow32">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblFundStrategy" android:text="Allocation Strategy :" android:layout_marginBottom="15px"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow33">
+                    <Spinner android:layout_width="wrap_content" android:id="@+id/spinnerFund" android:layout_height="wrap_content"></Spinner>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tblFixedFundC4">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lblFPS" android:layout_marginBottom="15px" android:textSize="16px" android:textStyle="bold" android:text="Fixed Portfolio Strategy"></TextView>
+                <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow1">
+                    <TextView android:layout_height="wrap_content" android:id="@+id/lblRRPH" android:layout_width="wrap_content" android:text="Risk Reward Profile : High"></TextView>
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow2">
+                    <TextView android:layout_height="wrap_content" android:id="@+id/lblBluFund" android:layout_width="wrap_content" android:text="* Bluechip Fund(%)" android:layout_gravity="right"></TextView>
+                    <EditText android:id="@+id/txtBluFund" android:layout_width="100px" android:inputType="number" android:layout_height="wrap_content" android:text="0"></EditText>
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow3">
+                    <TextView android:layout_height="wrap_content" android:id="@+id/lblMCGF" android:layout_width="wrap_content" android:text="* Multi Cap Growth Fund(%)"></TextView>
+                    <EditText android:id="@+id/txtMCGF" android:layout_width="wrap_content" android:inputType="number" android:layout_height="wrap_content" android:text="0"></EditText>
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow4">
+                    <TextView android:layout_height="wrap_content" android:id="@+id/lblDynPE" android:layout_width="wrap_content" android:text="* Dynamic P/E Fund(%)" android:layout_gravity="right"></TextView>
+                    <EditText android:id="@+id/txtDynPE" android:layout_width="wrap_content" android:inputType="number" android:layout_height="wrap_content" android:text="0"></EditText>
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow5">
+                    <TextView android:layout_height="wrap_content" android:id="@+id/lblOppFund" android:layout_width="wrap_content" android:layout_gravity="right" android:text="* Opportunities Fund(%)"></TextView>
+                    <EditText android:id="@+id/txtOppFund" android:layout_width="wrap_content" android:inputType="number" android:layout_height="wrap_content" android:text="0"></EditText>
+                </TableRow>
+                <TableRow android:id="@+id/tableRow6" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/lblCurAlloc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current Allocation (%) :" android:layout_gravity="right"></TextView>
+                    <TextView android:id="@+id/lblShowCurAlloc" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tblFixedFund2C5">
+                <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow6">
+                    <TextView android:layout_height="wrap_content" android:id="@+id/lblRRPM" android:layout_width="wrap_content" android:text="Risk Reward Profile : Medium"></TextView>
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow7">
+                    <TextView android:layout_height="wrap_content" android:id="@+id/lblMCBF" android:layout_width="wrap_content" android:layout_gravity="right" android:text="* Multi Cap Balance Fund(%)"></TextView>
+                    <EditText android:id="@+id/txtMCBF" android:layout_height="wrap_content" android:layout_width="100px" android:inputType="number" android:text="0"></EditText>
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow8">
+                    <TextView android:layout_height="wrap_content" android:id="@+id/lblRRPL" android:layout_width="wrap_content" android:text="Risk Reward Profile : Low"></TextView>
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow9">
+                    <TextView android:layout_height="wrap_content" android:id="@+id/lblIFund" android:layout_width="wrap_content" android:layout_gravity="right" android:text="* Income Fund(%)"></TextView>
+                    <EditText android:id="@+id/txtIFund" android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="number" android:text="0"></EditText>
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow10">
+                    <TextView android:layout_height="wrap_content" android:id="@+id/lblMMF" android:layout_width="wrap_content" android:layout_gravity="right" android:text="* Money Market Fund(%)"></TextView>
+                    <EditText android:id="@+id/txtMMF" android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="number" android:text="0"></EditText>
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tableRow12">
+                    <TextView android:layout_height="wrap_content" android:id="@+id/lblTotalAlloc" android:layout_width="wrap_content" android:text="Total Allocation (%) :" android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:id="@+id/lblShowTotalAlloc" android:layout_width="wrap_content" android:text="total"></TextView>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tblOverviewC6">
+                <TextView android:layout_height="wrap_content" android:text="Overview																																					(Step 5 of 5)" android:layout_width="wrap_content" android:id="@+id/lblOverview" android:layout_marginBottom="15px" android:textSize="16px" android:textStyle="bold"></TextView>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow51" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewName" android:text="Full Name " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowName"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow52" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewDOB" android:text="Date of Birth " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowDOB"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow53" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewGender" android:text="Gender " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowGender"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow54" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewMarStat" android:text="Marital Status " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowMarStat"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow55" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewMultiplier" android:text="Multiplier " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowMultiplier"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow56" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewAnPrem" android:text="Annual Premium " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowAnPrem"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow57" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewSum" android:text="Sum Assured " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowSum"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow58" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewTop" android:text="Term of Policy " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowTop"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow59" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lblViewFund" android:text="Fund Allocation Strategy "></TextView>
+                    <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lblShowFund"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow1">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewBluFund" android:layout_height="wrap_content" android:text="Bluechip Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowBluFund" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow2">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewMCGF" android:layout_height="wrap_content" android:text="Multi Cap Growth Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowMCGF" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow3">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewDynPE" android:layout_height="wrap_content" android:text="Dynamic P/E Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowDynPE" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow4">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewOppFund" android:layout_height="wrap_content" android:text="Opportunities Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowOppFund" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow5">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewMCBF" android:layout_height="wrap_content" android:text="Multi Cap Balanced Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowMCBF" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow6">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewIFund" android:layout_height="wrap_content" android:text="Income Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowIFund" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow7">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewMMF" android:layout_height="wrap_content" android:text="Money Market Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowMMF" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:id="@+id/tableRow27" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/btnDone" android:text="Done"></Button>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tblListC7">
+                <TableRow android:layout_height="wrap_content" android:id="@+id/tableRow20" android:layout_width="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblSrNo" android:layout_height="wrap_content" android:textStyle="bold" android:text="Sr.No.  |"></TextView>
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblNameTab" android:layout_height="wrap_content" android:text="Name" android:textStyle="bold"></TextView>
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblSumAssured" android:layout_height="wrap_content" android:textStyle="bold" android:text="|   Sum Assured" android:layout_marginLeft="75px"></TextView>
+                </TableRow>
+                <ListView android:layout_width="wrap_content" android:id="@+id/listViewAttachC11" android:layout_height="wrap_content"></ListView>
+                <TableRow android:id="@+id/tableRow22" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btnBackMenu" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Main Menu"></Button>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tblInfoC8">
+            	<TextView android:layout_height="wrap_content" android:text="Customer Information" android:layout_width="wrap_content" android:layout_marginBottom="15px" android:textSize="16px" android:textStyle="bold" android:id="@+id/lblInfo"></TextView>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow51" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewInfoName" android:text="Full Name " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoName"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow52" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewInfoDOB" android:text="Date of Birth " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoDOB"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow53" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewInfoGender" android:text="Gender " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoGender"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow54" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewInfoMarStat" android:text="Marital Status " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoMarStat"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow55" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewInfoMultiplier" android:text="Multiplier " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoMultiplier"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow56" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewInfoAnPrem" android:text="Annual Premium " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoAnPrem"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow57" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewInfoSum" android:text="Sum Assured " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoSum"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow58" android:layout_height="wrap_content" android:visibility="visible">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblViewInfoTop" android:text="Term of Policy " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoTop"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow59" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lblViewInfoFund" android:text="Fund Allocation Strategy " android:layout_gravity="right"></TextView>
+                    <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lblShowInfoFund"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow1">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewInfoBluFund" android:layout_height="wrap_content" android:text="Bluechip Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoBluFund" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow2">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewInfoMCGF" android:layout_height="wrap_content" android:text="Multi Cap Growth Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoMCGF" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow3">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewInfoDynPE" android:layout_height="wrap_content" android:text="Dynamic P/E Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoDynPE" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow4">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewInfoOppFund" android:layout_height="wrap_content" android:text="Opportunities Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoOppFund" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow5">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewInfoMCBF" android:layout_height="wrap_content" android:text="Multi Cap Balanced Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoMCBF" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow6">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewInfoIFund" android:layout_height="wrap_content" android:text="Income Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoIFund" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow7">
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblViewInfoMMF" android:layout_height="wrap_content" android:text="Money Market Fund (%) " android:layout_gravity="right"></TextView>
+                    <TextView android:layout_width="wrap_content" android:text="TextView" android:id="@+id/lblShowInfoMMF" android:layout_height="wrap_content"></TextView>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:id="@+id/tableRow510" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btnAttachDoc" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Attach Documents"></Button>
+                    <Button android:layout_height="wrap_content" android:layout_width="50dip" android:id="@+id/btnGenPDF" android:visibility="visible" android:text="Generate PDF"></Button>
+                </TableRow>
+                <TableRow android:id="@+id/tableRow21" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:id="@+id/btnGoBack" android:text="Back" android:layout_height="wrap_content" android:layout_width="50dip"></Button>
+                    <Button android:id="@+id/btnGoMenu" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Main Menu"></Button>
+                </TableRow>
+            </TableLayout>
+            <TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tblAttachDocC9">
+                <TextView android:layout_width="wrap_content" android:id="@+id/lblAttachDoc" android:layout_height="wrap_content" android:text="Attach Document(s)" android:layout_marginBottom="20px"></TextView>
+                <TableRow android:id="@+id/tableRow23" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/lblBrowse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Browse Document :"></TextView>
+                    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnBrowse" android:text="Browse"></Button>
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tableRow26">
+                    <TextView android:id="@+id/lblViewDocPath" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Selected Document :"></TextView>
+                    <TextView android:layout_width="wrap_content" android:id="@+id/lblShowDocPath" android:text="Path" android:layout_height="wrap_content" android:textSize="25px"></TextView>
+                </TableRow>
+                <TableRow android:layout_height="wrap_content" android:id="@+id/tableRow28" android:layout_width="wrap_content">
+                </TableRow>
+                <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            		<TextView android:layout_width="wrap_content" android:id="@+id/lblTag" android:text="Tag :" android:layout_height="wrap_content"></TextView>
+            		<Spinner android:id="@+id/spinnerTag" android:layout_height="wrap_content" android:layout_width="275dip"></Spinner>
+        		</TableRow>
+                <TableRow android:id="@+id/tableRow24" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/lblDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Description :"></TextView>
+                    <EditText android:layout_height="wrap_content" android:id="@+id/txtDocDesc" android:layout_width="190dip"></EditText>
+                </TableRow>
+                <TableRow android:id="@+id/tableRow25" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnClickMenu" android:text="Main Menu"></Button>
+                    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Attach" android:id="@+id/btnAttachPDF"></Button>
+                </TableRow>
+            </TableLayout>
+        </ViewFlipper>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/LinearLayout03" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Previous" android:id="@+id/ButtonPrev"></Button>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Next" android:id="@+id/ButtonNext"></Button>
+        <TextView android:layout_marginLeft="80px" android:layout_width="wrap_content" android:text="* Mandatory" android:layout_height="wrap_content" android:id="@+id/lblStar" android:textColor="#990000"></TextView>
+    </LinearLayout>
+</LinearLayout>

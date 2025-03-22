@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">--POCBanking--</string>
+    <string name="app_name">POC | ICICI PRUDENTIAL LIFE INSURANCE</string>
+    
+   
+    <string name="summary">MediaStoreTest, call the photo crop</string>
+    
+    <string name="photoPickerNotFoundText">We did not find a MediaStore Gallery</string>
+    <string name="no_photo_picked">No photo was selected from the MediaStore Gallery</string>
+    <string name="fileIOIssue">File IO issue, can\'t write temp file on this system</string>
+
+</resources>
